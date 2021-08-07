@@ -9,7 +9,7 @@ const UserInfo: React.VFC = () => {
   const currentUser = useCurrentUser()
 
   if (currentUser) {
-    return null
+    return <p>{currentUser.email} としてログイン中です</p>
   } else {
     return (
       <p>
