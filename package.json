@@ -32,6 +32,7 @@
     "@material-ui/icons": "4.11.2",
     "@prisma/client": "2.28.0",
     "blitz": "0.38.6",
+    "detect-location-jp": "0.0.4",
     "final-form": "4.20.2",
     "react": "alpha",
     "react-dom": "alpha",
