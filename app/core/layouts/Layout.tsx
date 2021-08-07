@@ -1,5 +1,5 @@
 import React, { ReactNode, Suspense } from "react"
-import { Head } from "blitz"
+import { Head, Link } from "blitz"
 import clsx from "clsx"
 import { Container, IconButton, useTheme, Toolbar, AppBar, Drawer } from "@material-ui/core"
 import MenuIcon from "@material-ui/icons/Menu"
@@ -19,7 +19,7 @@ const Layout = ({ title, children }: LayoutProps) => {
   return (
     <>
       <Head>
-        <title>{title || "Blitz.js + MongoDB + Material-UI"}</title>
+        <title>{title || "ハートフルマップ"}</title>
       </Head>
       <Container className={classes.root}>
         <AppBar
@@ -40,7 +40,13 @@ const Layout = ({ title, children }: LayoutProps) => {
             >
               <MenuIcon />
             </IconButton>
-            <h1>{title || "Blitz.js + MongoDB + Material-UI"}</h1>
+            <h1>
+              <Link href="/" passHref>
+                <a style={{ color: "white", textDecoration: "none" }}>
+                  {title || "ハートフルマップ"}
+                </a>
+              </Link>
+            </h1>
           </Toolbar>
         </AppBar>
         <Drawer
