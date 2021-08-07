@@ -22,7 +22,7 @@ const UserInfo: React.VFC = () => {
   }
 }
 
-const IndexPage: React.VFC = () => {
+const Home: React.VFC = () => {
   return (
     <Layout>
       <h2>ハートフルマップへようこそ！</h2>
@@ -47,4 +47,4 @@ const IndexPage: React.VFC = () => {
   )
 }
 
-export default IndexPage
+export default Home
