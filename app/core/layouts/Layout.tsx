@@ -14,8 +14,7 @@ type LayoutProps = {
 
 const Layout = ({ title, children }: LayoutProps) => {
   const classes = useStyles()
-  const theme = useTheme()
-  const [open, setOpen] = React.useState(true)
+  const [open, setOpen] = React.useState(false)
 
   return (
     <>
